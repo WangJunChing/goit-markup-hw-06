@@ -168,7 +168,7 @@ body {
 .modal {
   background-color: var(--DAIRY);
   width: 408px;
-  height: 584px;
+  /* height: 584px; */
   border-radius: 4px;
   padding: 24px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -263,6 +263,7 @@ body {
   transition-property: color, border-color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 8px 16px;
+  margin-bottom: 16px;
 }
 
 .service-comment:hover,
@@ -270,6 +271,72 @@ body {
   border: 1px solid var(--IRIS);
 }
 
+.agree-text {
+  color: var(--LIGHT-SLATE);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.48px;
+}
+.service-agree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agree-checkbox {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  left: 16px;
+  opacity: 0;
+}
+
+.agree-checkmark {
+  fill: none;
+  margin-right: 8px;
+  border: 1px solid black;
+  border-radius: 2px;
+  transition: 250ms;
+  transition-property: border-color, background-color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-agree .agree-checkbox:focus + .agree-checkmark,
+.service-agree .agree-checkbox:checked:focus + .agree-checkmark {
+  outline: 1px solid #212121;
+}
+
+.service-agree .agree-checkbox:checked + .agree-checkmark {
+  background-color: var(--IRIS);
+  border-color: var(--IRIS);
+  fill: var(--WHITE);
+  outline: none;
+  stroke: var(--WHITE);
+  stroke-width: 0.2;
+}
+
+.modal-send {
+  padding: 16px 32px;
+  background-color: var(--IRIS);
+  color: var(--WHITE);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  margin-top: 24px;
+}
+
+.modal-send:hover {
+  cursor: pointer;
+}
 /* End of Hero Section */
 
 /* Benefit Section */
