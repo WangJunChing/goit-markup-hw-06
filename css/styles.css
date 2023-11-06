@@ -671,5 +671,8 @@ body {
 .btn-sub svg {
   fill: var(--WHITE);
 }
+.btn-sub:hover {
+  cursor: pointer;
+}
 /* End of Subscribe Styling */
 /* End of Footer Section */
