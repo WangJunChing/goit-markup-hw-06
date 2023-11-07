@@ -17,6 +17,8 @@
 /* General Style */
 body {
   font-family: "Roboto", sans-serif;
+  width: fit-content;
+  margin: 0 auto;
 }
 .link {
   text-decoration: none;
